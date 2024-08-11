@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+    <div class="calculator row jcc aic">
+        <div class="container column jcc aic">
+            <h1>Калькулятор жизни</h1>
+            <h2>Заполните поля для вашей даты рождения</h2>
+            <div class="birthday">
+                <span>Год</span>
+                <input type="number" class="js-input-years js-input">
+                <span>Месяц</span>
+                <input type="number" class="js-input-month js-input">
+                <span>День</span>
+                <input type="number" class="js-input-days js-input">
+            </div>
+
+            <div class="invalid js-invalid row jcfs aic"></div>
+
+            <div class="time column jcc aic js-time-block">
+                <div class="time-block row jcc aic">
+                    <span>Вам</span>
+                    <span id="years" class="row jcc aic time-span js-years-span"></span>
+                    <span class="row jcfs aic">лет</span>
+                </div>
+                <div class="time-block row jcc aic">
+                    <span>Вы прожили</span>
+                    <span id="days" class="row jcc aic time-span js-days-span"></span>
+                    <span class="row jcfs aic">дней</span>
+                </div>
+                
+                <div class="time-block row jcc aic">
+                    <span class="or">Или</span>
+                    <span id="hours" class="row jcc aic time-span js-hours-span"></span>
+                    <span class="row jcfs aic">часов</span>
+                </div>
+
+                <div class="time-block row jcc aic">
+                    <span class="or">Или</span>
+                    <span id="minutes" class="row jcc aic time-span js-minutes-span"></span>
+                    <span class="row jcfs aic">минут</span>
+                </div>
+                <div class="time-block row jcc aic">
+                    <span class="or">Или</span>
+                    <span id="second" class="row jcc aic time-span js-second-span"></span>
+                    <span class="row jcfs aic">секунд</span>
+                </div>
+            </div>
+
+            <button class="btn js-btn">Вычислить</button>
+        </div>
+    </div>
+
+    
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

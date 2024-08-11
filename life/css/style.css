@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Roboto';
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.jcc {
+    justify-content: center;
+}
+.jcsb {
+    justify-content: space-between;
+}
+.jcsa {
+    justify-content: space-around;
+}
+.jcfs {
+    justify-content: flex-start;
+}
+.jcfe {
+    justify-content: flex-end;
+}
+.aic {
+    align-items: center;
+}
+.aifs {
+    align-items: flex-start;
+}
+.aife {
+    align-items: flex-end;
+}
+.hidden {
+    display: none;
+}
+ul, li {
+  list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
+
+.calculator {
+    min-height: 100vh;
+    background-color: #502990;
+}
+
+.container {
+    width: 600px;
+    min-height: 600px;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #FFF;
+    box-shadow: 0 0 35px 2px rgb(45, 29, 70);
+}
+
+h1 {
+    margin: 50px 0 50px;
+}
+h2 {
+    margin: 0 0 50px;
+}
+
+
+.invalid {
+    width: 500px;
+    min-height: 40px;
+    color:red;
+    margin: 10px 0 30px;
+}
+.birthday > span {
+    margin: 0 10px;
+}
+.birthday > input {
+    outline: none;
+    width: 100px;
+    height: 50px;
+    padding-left: 10px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0; 
+}
+
+
+.time {
+    opacity: 0;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+.active {
+    opacity: 1;
+}
+.time > div {
+    margin-bottom: 30px;
+}
+.time-block span:nth-child(2) {
+    min-width: 200px;
+}
+.time-block span:nth-child(1) {
+    min-width: 170px;
+}
+.time-block span:nth-child(3) {
+    min-width: 100px;
+}
+.time-block span:nth-child(2) {
+    min-width: 200px;
+    border: 1px solid #d6d6d6;
+    min-height: 40px;
+    margin-right: 20px;
+}
+#years {
+    color: rgb(0, 38, 255);
+}
+#days {
+    color: rgb(68, 255, 0);
+}
+#hours {
+    color: rgb(0, 255, 238);
+}
+#minutes {
+    color: rgb(255, 0, 38);
+}
+#second {
+    color: rgb(247, 0, 255);
+}
+.or {
+    color: #747474;
+}
+
+.btn {
+    user-select: none;
+    min-width: 300px;
+    min-height: 60px;
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #000;
+    border: none;
+    color: #fff;    
+    cursor: pointer;  
+    margin-bottom: 50px;
+}
